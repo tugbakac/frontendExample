@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .header{
+            padding:25px;
+            background-color: white;
+            text-align: center;
+        }
+        body{
+            background-color: lightgray;
+            padding: 10px;
+            font-family: Arial;
+        }
+        .nav{
+            background-color: black;
+            overflow: hidden;
+        }
+        .nav a{
+            color: white;
+            text-decoration: none;
+            padding: 15px 17px;
+            float: left;
+        }
+        .nav a:hover{
+            background-color: white;
+            color: black;
+        }
+        .left{
+            float: left;
+            width: 75%;
+        }
+        .right{
+            float:left;
+            width: 25%;
+        }
+        .card{
+            background-color: white;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .fakeimg{
+            background-color: #aaa;
+            padding: 30px;
+            width: 100%;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .footer{
+            background-color: #ddd;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        @media screen and (max-width: 800px)
+        {
+            .left, .right{
+                width: 100%;
+            }
+            .right{
+                padding-left: 0;
+            }
+        }
+        
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <h1>My Website</h1>
+        <p>Resize the browser window to see the effect</p>
+    </div>
+    <div class="nav">
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#">Link</a>
+        <a href="#" style="float: right;">Link</a>
+    </div>
+    <div class="row">
+        <div class="left">
+            <div class="card">
+                    <h2>TITLE HEADING</h2>
+                    <h5>Title description, June 12, 2020</h5>
+                    <div class="fakeimg" style="height: 200px;">Image</div>
+                    <p>Some Text..</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, accusamus fugit, eveniet doloribus minima voluptates magni natus hic illum beatae sint laboriosam. Aliquam obcaecati ut blanditiis, eaque quo magni debitis.</p>
+            </div>
+            <div class="card">
+                <h2>TITLE HEADING</h2>
+                <h5>Title description, June 12, 2020</h5>
+                <div class="fakeimg" style="height: 200px;">Image</div>
+                <p>Some Text..</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, accusamus fugit, eveniet doloribus minima voluptates magni natus hic illum beatae sint laboriosam. Aliquam obcaecati ut blanditiis, eaque quo magni debitis.</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="card">
+                <h2>About Me</h2>
+                <div class="fakeimg" style="height: 100px;">Image</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque doloribus quibusdam assumenda dolores aut eligendi ipsam dignissimos earum facere vel fuga accusamus, beatae aliquam veniam aperiam mollitia, itaque quis repudiandae.</p>
+
+            </div>
+            <div class="card">
+                <h3>Popular Post</h3>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+                <div class="fakeimg">Image</div>
+            </div>
+            <div class="card">
+                <h3>Follow Me</h3>
+                <p>Some Text..</p>
+            </div>
+        </div>  
+    </div>
+    <div class="footer">
+            <h2>Footer</h2>
+    </div>
+</body>
+</html>
